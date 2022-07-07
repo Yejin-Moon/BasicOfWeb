@@ -4,11 +4,15 @@
     <body>
         <h1>여기입니다.</h1>
         <script>
-            // 1. 출력 ---> chrome --> 개발자도구 --> console
-            console.log("이것은 자바스크립트입니다."); //세미콜론 없어도 됨
-            console.log('이것은 자바스크립트입니다.')
-            console.log(`이것은 
-            자바스크립트 입니다.`)
+            //typeof ---> 자료형 이름
+            //+ : string을 연결해서 붙이는 연산자. string concatenation operator
+            console.log('hello의 자료형은 '+typeof("hello"));
+            console.log('4의 자료형은 '+typeof(4))
+
+            console.log('123'+5)//1235 출력
+            //문자열을 숫자로 바꿔주는 함수 = parseInt
+            console.log('parseInt의 결과는 : '+(parseInt('123')+5)) //128
+            console.log('parseInt의 결과2는 : '+parseInt('123')+5) //1235
         </script>
     </body>
 </html>
