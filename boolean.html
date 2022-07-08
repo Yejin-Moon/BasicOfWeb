@@ -1,0 +1,28 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1 id='grade'></h1>
+
+        <script>
+            // 1. boolean
+            let k = true;
+            k = false;
+            console.log('k : '+k);//false;
+            console.log('k type: '+typeof(k));//boolean
+
+            // 2. 비교연산자
+            console.log('1 == 1: '+(1==1)); // true
+            console.log('\'1\' == 1: '+('1' == 1)); // true
+            // 데이터형까지 같은지 비교해라
+            console.log('\'1\' === 1: '+('1' === 1)); // false
+            // != 와 !==
+            console.log('1 != 1: '+(1!=1)); // false
+            console.log('\'1\' != 1: '+('1' != 1)); // false
+            console.log('\'1\' !== 1: '+('1' !== 1)); // true
+            // 문자열 비교, 사전순(나중에 나오는 값이 큰 값)
+            console.log('ack < abk : '+('ack'<'abk')); // false
+            console.log('apple < banana : '+('apple'<'banana')); // true
+        </script>
+    </body>
+</html>
