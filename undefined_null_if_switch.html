@@ -1,0 +1,39 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1 id = 'grade'></h1>
+        <script>
+            // 1. undefined, null
+            let k;
+            console.log('k is : '+k); //undefined
+
+            let x = null;
+            console.log('x is : '+x); //null(초기화는 됨)
+
+            // 2. if 사용하여 성적 출력
+            const score = parseInt(prompt());
+
+            if(score>=90) document.querySelector('h1#grade').textContent = 'A'
+            else if(score>=80) document.querySelector('h1#grade').textContent = 'B'
+            else document.querySelector('h1#grade').textContent = 'C'
+
+            // 3. switch 사용하여 성적 출력
+            switch(score)
+            {
+                case 100: 
+                document.querySelector('h1#grade').textContent = '완벽'
+                    break;
+                case 90: 
+                document.querySelector('h1#grade').textContent = '충분'
+                    break;
+                default:
+                document.querySelector('h1#grade').textContent = '나머지'
+            }
+
+            //4. 삼항 연산자로 50점 이상이면 pass, 아니면 fail
+            const msg = (score>=50)? 'pass' : 'fail'
+            document.querySelector('h1#grade').textContent = msg
+        </script>
+    </body>
+</html>
