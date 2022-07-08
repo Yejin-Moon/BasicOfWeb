@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <h1> 여기입니다. </h1>
+        <script>
+            //const = 한 번 대입하면 변경불가
+            //let = 일반 변수
+            let b = 1;
+            console.log('b의 초기값 : '+b);
+            b=2;
+            console.log('b의 변경값 : '+b);
+
+            let one = 10;
+            let two = 20;
+            let res = a+b;
+            const d = a*10;
+
+            const e = 2 ** 3//2의 3승 (2^3)
+
+            //사용자에게 입력받아서 출력
+            const userMsg = prompt();//입력창 띄워서 받아오기
+            console.log('사용자가 입력한 메시지는 '+userMsg);//콘솔창에 띄우기
+            document.querySelector('h1').textContent = userMsg;//웹페이지에 띄우기
+        </script>
+    </body>
+</html>
