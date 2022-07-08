@@ -1,0 +1,27 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1 id = 'h11'> 첫 번째 입니다. </h1>
+        <h1 id = 'h12'> 두 번째 입니다.</h1>
+        <h1 id = 'h13'> 세 번째 입니다.</h1>
+        <script>
+            const userMsg = prompt();
+            // 1. print
+            //document.querySelector('h1#h13').textContent=userMsg; //세번째 h1에 출력
+            
+            // 2. h1을 모두 선택하는 queryselectorall
+            //const allh1 = document.querySelectorAll('h1');
+            //allh1.forEach((elem, index) => {elem.textContent = userMsg});
+
+            // 3. 입력받은 숫자가 짝수인지 홀수인지 판별
+            const userNumber = parseInt(userMsg);
+            const result = userNumber%2;
+
+            let msg = "";
+            if(result==1) msg = userMsg +"는 홀수입니다."
+            else msg = userMsg+"는 짝수입니다."
+            document.querySelector('h1#h11').textContent = msg;
+        </script>
+    </body>
+</html>
